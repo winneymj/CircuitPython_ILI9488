@@ -7,15 +7,14 @@ background, a smaller purple rectangle, and some yellow text. All drawing is don
 using the displayio module.
 
 Pinouts are for the PiTFT and should be run in CPython.
-https://www.buydisplay.com/lcd-3-5-inch-320x480-tft-display-module-optl-touch-screen-w-breakout-board
 """
 import board
 import terminalio
 import displayio
 import digitalio
 from adafruit_display_text import label
+from bagaloozy_ili9488 import ILI9488
 from paralleldisplay import ParallelBus
-import bagaloozy_ili9488
 
 # Release any resources currently in use for the displays
 displayio.release_displays()
@@ -41,7 +40,7 @@ display_bus = ParallelBus(data0=tft_data0,
                           reset=tft_res,
                           frequency=19_999_999)
 
-display = bagaloozy_ili9488.ILI9488(display_bus, width=320, height=480)
+display = ILI9488(display_bus, width=320, height=480)
 
 # Make the display context
 splash = displayio.Group()
