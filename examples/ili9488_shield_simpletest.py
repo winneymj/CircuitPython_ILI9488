@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: 2021 ladyada for Adafruit Industries
+# SPDX-FileCopyrightText: 2022 Mark Winney for Bagaloozy
 # SPDX-License-Identifier: MIT
 
 """
