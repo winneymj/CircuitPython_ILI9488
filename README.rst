@@ -20,7 +20,7 @@ Usage Example
 
     import board
     import displayio
-    import adafruit_ili9488
+    import bagaloozy_ili9488
 
     spi = board.SPI()
     tft_cs = board.D9
@@ -29,7 +29,7 @@ Usage Example
     displayio.release_displays()
     display_bus = displayio.FourWire(spi, command=tft_dc, chip_select=tft_cs)
 
-    display = adafruit_ili9488.ILI9488(display_bus, width=320, height=480)
+    display = bagaloozy_ili9488.ILI9488(display_bus, width=320, height=480)
 
     # Make the display context
     splash = displayio.Group()

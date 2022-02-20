@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: MIT
 
 """
-`adafruit_ili9488`
+`bagaloozy_ili9488`
 ====================================================
 
 Display driver for ILI9488

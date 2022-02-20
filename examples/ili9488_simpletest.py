@@ -12,7 +12,7 @@ import board
 import terminalio
 import displayio
 from adafruit_display_text import label
-import adafruit_ili9488
+import bagaloozy_ili9488
 
 # Release any resources currently in use for the displays
 displayio.release_displays()
@@ -24,7 +24,7 @@ tft_dc = board.D10
 display_bus = displayio.FourWire(
     spi, command=tft_dc, chip_select=tft_cs, reset=board.D6
 )
-display = adafruit_ili9488.ILI9488(display_bus, width=320, height=480)
+display = bagaloozy_ili9488.ILI9488(display_bus, width=320, height=480)
 
 # Make the display context
 splash = displayio.Group()

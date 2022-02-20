@@ -51,5 +51,5 @@ setup(
     keywords="adafruit blinka circuitpython micropython ili9488 display tft lcd displayio",
     # You can just specify the packages manually here if your project is
     # simple. Or you can use find_packages().
-    py_modules=["adafruit_ili9488"],
+    py_modules=["bagaloozy_ili9488"],
 )
